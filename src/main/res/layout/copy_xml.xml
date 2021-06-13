@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="4dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/imageViewCard"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/image_border"
+            android:padding="2dp"
+            android:src="@drawable/wardrobe_logo"
+            />
+
+        <TextView
+            android:id="@+id/type_clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toEndOf="@+id/imageViewCard"
+            android:text="Type"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/color_clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/type_clothes"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toEndOf="@+id/imageViewCard"
+            android:text="Color"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pattern_clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/color_clothes"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toEndOf="@+id/imageViewCard"
+            android:text="Pattern"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pattern_clothes"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toEndOf="@+id/imageViewCard"
+            android:text="Date"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price_clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_clothes"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/imageViewCard"
+            android:text="Price"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/clothes_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="11dp"
+            android:src="@drawable/ic_edit"></ImageView>
+
+        <ImageView
+            android:id="@+id/clothes_delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="11dp"
+            android:src="@drawable/ic_delete"></ImageView>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

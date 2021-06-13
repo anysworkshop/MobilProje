@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <ImageView
+        android:id="@+id/something"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="Somth"
+        android:src="@drawable/ic_profile"
+        app:layout_constraintBottom_toTopOf="@id/combine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/favourites"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <ImageView
+        android:id="@+id/favourites"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="Favourites"
+        android:src="@drawable/ic_outline_thumb_up_alt_24"
+        app:layout_constraintBottom_toTopOf="@id/combine"
+        app:layout_constraintLeft_toRightOf="@id/something"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/combine"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@id/drawer"
+        app:layout_constraintTop_toBottomOf="@id/favourites"
+        android:onClick="openCombinationPage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:contentDescription="Create Combine"
+        android:src="@drawable/wardrobe_logo" />
+
+    <ImageView
+        android:id="@+id/drawer"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="openDrawerPage"
+        app:layout_constraintTop_toBottomOf="@id/combine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/clothes"
+        android:contentDescription="Drawer"
+        android:src="@drawable/ic_drawer"/>
+
+
+    <ImageView
+        android:id="@+id/clothes"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="Clothes"
+        android:src="@drawable/ic_activities"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/drawer"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/combine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

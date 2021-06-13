@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyWardrobe</string>
+
+    <string-array name="parts">
+        <item>head</item>
+        <item>face</item>
+        <item>top</item>
+        <item>bottom</item>
+        <item>footwear</item>
+    </string-array>
+</resources>
